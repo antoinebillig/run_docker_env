@@ -2,7 +2,7 @@
 Some little tools to automate docker set up and execution on your local machine
 
 
-**For the moment it is only working for Windows hosts.**
+**For the moment it is only working for Windows and MacOS (Darwin) hosts.**
 
 
 The script will allow you to fully automate some commands such as docker run , docker kill, docker rm that you would usually have to do and sometimes custom (ports binding etc). It is especially usefull to automatically free a port when you want to re run a container.
