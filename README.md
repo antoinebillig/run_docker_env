@@ -11,6 +11,11 @@ Also it can run an app with its dependencies. So far, it is configured to run a 
 
 ***To set it up, just change the batch file name to something that matches your project name. You might also want to change the last line of that same script to something that makes more sense than 'App'.***
 
+***You will also need :
+***- a valid cred.json file that match a service account with required rights, to be placed alongside the script.
+***- a valid unittests.py file located in ../test, this should return OK on success and KO on failure.
+***- a valid directory for the main app to be run. The main Dockerfile should be in the script parent directory.
+
 
 To be able to run any commands, you must have installed and configured Google Cloud SDK and kubectl. (gcloud auth login/ gcloud config for project ID and zone/ gcloud container cluster get-credentials for the right cluster). Also you need run gcloud auth configure-docker to allow push to Google Cloud Registry.
 If you were to use the CloudSQL proxy, you also need an existing mysql database on Google Cloud SQL and the related infos (region/instance name)
